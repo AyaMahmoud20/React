@@ -1,6 +1,6 @@
 import React from 'react'
 import './Women.css'
-import data_product  from '../Components/Assets/data'
+import data_product  from '../Components/Assets/data_women'
 import Items from '../Items/Items'
 const Women =() => {
     return (

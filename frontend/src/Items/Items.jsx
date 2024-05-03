@@ -6,7 +6,7 @@ const Items =(props) => {
             <img src={props.image} alt=''/>
             <p>{props.name}</p>
             <div className="item-prices">
-                ${props.item_price}
+                $ {props.item_price}
 
             </div>
 

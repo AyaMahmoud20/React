@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../Components/Assets/logo.png';
-import card_icon from '../Components/Assets/cart_icon.png';
+import logo from '../Components/Assets/11zon_cropped (7).png';
 
 import Dropdown from '../Dropdown/Dropdown';
+import Profile from '../Pages/Profile'; 
+
 
 const Navbar = () => {
   const [menu, setMenu] = useState("Home");
@@ -24,10 +25,7 @@ const Navbar = () => {
           <NavLink to='/shop' activeClassName='active-link'>Shop</NavLink>
           {menu === "Shop" ? <hr /> : null}
         </li>
-        <li onClick={() => setMenu("Saved")}>
-          <NavLink to='/saved' activeClassName='active-link'>Saved</NavLink>
-          {menu === "Saved" ? <hr /> : null}
-        </li>
+      
         <li onClick={() => setMenu("Cart")}>
           <NavLink to='/cart' activeClassName='active-link'>Cart</NavLink>
           {menu === "Cart" ? <hr /> : null}

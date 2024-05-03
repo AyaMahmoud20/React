@@ -10,6 +10,8 @@ import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import Saved from "./Pages/Saved";
 import Profile from "./Pages/Profile";
+import Men  from "./Men/Men";
+import Kids from "./Kids/Kids";
 
 // Create a context for your app
 const MyContext = React.createContext();
@@ -36,7 +38,10 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/shop' element={<Shop />} />
             <Route path='/categories' element={<Categories />} />
-            <Route path='/women' element={<Women />} /> // Add route for Women component
+            <Route path='/women' element={<Women />} /> 
+            <Route path='/men' element={<Men />} /> 
+            <Route path='/kids' element={<Kids />} /> 
+
             <Route path='/mens' element={<Categories category='mens' />} />
             <Route path='/womens' element={<Categories category='womens' />} />
             <Route path='/kids' element={<Categories category='kids' />} />
@@ -46,7 +51,6 @@ function App() {
             </Route>
             <Route path='/cart' element={<Cart />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/saved' element={<Saved />} />
             <Route path='/profile' element={<Profile />} />
           </Routes>
         </div>

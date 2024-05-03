@@ -30,7 +30,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #ff4141;
+    background: #c47676;
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -41,4 +41,13 @@
     align-items: center;
     justify-content: center;
 
+}
+.hero-latest-btn {
+    /* Your existing styles */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.hero-latest-btn.hovered {
+    transform: scale(1.05); /* Enlarge the button slightly */
+    filter: brightness(110%); /* Brighten the button */
 }
